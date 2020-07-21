@@ -1,5 +1,8 @@
 language: node_js
 
+env:
+  - TRUFFLEHOG_EXCLUSION_PATHS_FILE="1234556"
+
 import:
   - .secrets-scanning-template.yml
   - .sca-template.yml
