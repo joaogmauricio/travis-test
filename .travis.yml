@@ -1,11 +1,11 @@
 language: node_js
 
 import:
-  - .secrets-scanning.yml
-  - .sca.yml
-  - .sast.yml
-  - .container-scanning.yml
-  - .dast.yml
+  - .secrets-scanning-template.yml
+  - .sca-template.yml
+  - .sast-template.yml
+  - .container-scanning-template.yml
+  - .dast-template.yml
 
 stages:
   - secrets-scanning
