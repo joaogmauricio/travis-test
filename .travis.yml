@@ -4,7 +4,7 @@ language: node_js
 #  - .secrets-scanning.yml
 
 stages:
-  - secrets-scanning
+#  - secrets-scanning
   - build
 
 jobs:
