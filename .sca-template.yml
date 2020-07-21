@@ -4,4 +4,7 @@ services:
 jobs:
   include:
     - stage: sca
-      script: echo "sca"
+      script: docker run -v $(pwd):/app thefriendlypirate/node run --from=travis-ci
+      name: "yarn-audit"
+    - script: docker run -v $(pwd):/app thefriendlypirate/node run --from=travis-ci
+      name: "npm-audit"
