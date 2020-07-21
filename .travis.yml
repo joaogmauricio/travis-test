@@ -14,15 +14,7 @@ stages:
 
 jobs:
   include:
-    - stage: sca
-      script: echo "sca"
-    - stage: sast
-      script: echo "sast"
     - stage: build
       script: echo "build"
-    - stage: container-scanning
-      script: echo "container-scanning"
     - stage: deploy
       script: echo "deploy"
-    - stage: dast
-      script: echo "dast"
