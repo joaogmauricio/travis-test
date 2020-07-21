@@ -1,4 +1,30 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
+language: node_js
+
+services:
+  - docker
+
+stages:
+  - secrets-scanning
+  - sca
+  - sast
+  - build
+  - container-scanning
+  - deploy
+  - dast
+
+jobs:
+  include:
+    - stage: secrets-scanning
+      script: echo "secrets-scanning"
+    - stage: sca
+      script: echo "sca"
+    - stage: sast
+      script: echo "sast"
+    - stage: build
+      script: echo "build"
+    - stage: container-scanning
+      script: echo "container-scanning"
+    - stage: deploy
+      script: echo "deploy"
+    - stage: dast
+      script: echo "dast"
