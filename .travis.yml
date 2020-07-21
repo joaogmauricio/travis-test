@@ -1,7 +1,7 @@
 language: node_js
 
-import:
-  - .secrets-scanning.yml
+#import:
+#  - .secrets-scanning.yml
 
 stages:
   - secrets-scanning
