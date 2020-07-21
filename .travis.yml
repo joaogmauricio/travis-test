@@ -14,8 +14,6 @@ stages:
 
 jobs:
   include:
-    - stage: secrets-scanning
-      script: echo "secrets-scanning"
     - stage: sca
       script: echo "sca"
     - stage: sast
