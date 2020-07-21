@@ -1,0 +1,7 @@
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: secrets-scanning
+      script: echo "secrets-scanning"
