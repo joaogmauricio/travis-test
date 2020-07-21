@@ -1,8 +1,5 @@
 language: node_js
 
-env:
-  - SEC_GITSECRETS_IMAGE="thefriendlypirate/trufflehog"
-
 import:
   - .secrets-scanning-template.yml
   - .sca-template.yml
