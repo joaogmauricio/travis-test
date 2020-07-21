@@ -3,5 +3,5 @@ services:
 
 jobs:
   include:
-    - stage: secrets-scanning
-      script: echo "secrets-scanning"
+    - stage: sast
+      script: echo "sast"
