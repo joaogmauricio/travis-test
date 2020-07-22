@@ -3,7 +3,7 @@ services:
 
 jobs:
   allow_failures:
-    - if: ALLOW_FAILURES != false
+    - if: env(ALLOW_FAILURES) != false
   include:
     - stage: sca
       script: docker run -v $(pwd):/app -e TRAVIS_JOB_NAME thefriendlypirate/node run --from=travis-ci
