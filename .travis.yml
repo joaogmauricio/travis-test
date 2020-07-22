@@ -1,11 +1,11 @@
 language: python
 
 import:
-  - .secrets-scanning-template.yml
-  - .sca-template.yml
-  - .sast-template.yml
-  - .container-scanning-template.yml
-  - .dast-template.yml
+  - .security-secrets-scanning-template.yml
+  - .security-sca-template.yml
+  - .security-sast-template.yml
+  - .security-container-scanning-template.yml
+  - .security-dast-template.yml
 
 stages:
   - secrets-scanning
