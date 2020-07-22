@@ -1,4 +1,4 @@
-language: node_js
+language: python
 
 import:
   - .security-secrets-scanning-template.yml
