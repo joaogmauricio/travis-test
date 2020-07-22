@@ -22,6 +22,6 @@ stages:
 jobs:
   include:
     - stage: build
-      script: echo "build"
+      script: echo "build" && ls -la
     - stage: deploy
       script: echo "deploy"
