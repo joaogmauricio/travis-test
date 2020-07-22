@@ -5,6 +5,7 @@ jobs:
   allow_failures:
     - if: env(ALLOW_FAILURES) != false
   include:
+    - before_build: rm -Rf ./node_modules
     - stage: sca
       script: docker run -v $(pwd):/app -e TRAVIS_JOB_NAME thefriendlypirate/node run --from=travis-ci
       install: skip

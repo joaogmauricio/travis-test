@@ -23,5 +23,4 @@ jobs:
   include:
     - stage: build
       install: skip
-      script: echo "build" && ls -la
-      deploy: echo "deploy"
+      script: echo "build"
