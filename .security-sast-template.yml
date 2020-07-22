@@ -14,7 +14,7 @@ jobs:
       install: skip
       name: "bandit"
       if: language = "python"
-    - script: docker run -v $(pwd):/app -e VERACODE_ID -e VERACODE_KEY -e VERACODE_SANDBOXNAME-e VERACODE_APPNAME -e VERACODE_PACKAGE -e VERACODE_SCANVERSION thefriendlypirate/veracode-scanner run --from=travis-ci
+    - script: docker run -v $(pwd):/app -e VERACODE_ID -e VERACODE_KEY -e VERACODE_SANDBOXNAME -e VERACODE_APPNAME -e VERACODE_PACKAGE -e VERACODE_SCANVERSION thefriendlypirate/veracode-scanner run --from=travis-ci
       install: skip
       name: "veracode"
       if: env(USE_VERACODE) == true
