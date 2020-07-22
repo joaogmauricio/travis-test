@@ -1,4 +1,4 @@
-language: php
+language: ruby
 
 import:
   - .security-secrets-scanning-template.yml
