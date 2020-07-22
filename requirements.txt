@@ -6,7 +6,7 @@ invenio-previewer==1.0.0a11
 rply==0.7.3
 limnoria==2019.10.22
 matrix-synapse==1.4.1
-keyring==0.9.3
+keyring==0.10
 reportlab==3.5.42
 sqlalchemy==1.2.17
 rediswrapper==0.2.1
