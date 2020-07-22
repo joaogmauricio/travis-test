@@ -1,5 +1,5 @@
 Flask==1.1.1
-wagtail-2fa==1.2.0
+wagtail-2fa==1.4.1
 ecdsa==0.13.2
 postfix-mta-sts-resolver==0.5.0
 invenio-previewer==1.0.0a11
