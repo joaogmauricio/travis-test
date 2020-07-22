@@ -1,4 +1,4 @@
-language: python
+language: node_js
 
 #env:
 #  - USE_VERACODE=true
@@ -22,6 +22,6 @@ stages:
 jobs:
   include:
     - stage: build
+      install: skip
       script: echo "build" && ls -la
-    - stage: deploy
-      script: echo "deploy"
+      deploy: echo "deploy"
