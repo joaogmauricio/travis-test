@@ -6,7 +6,7 @@ jobs:
     - if: env(ALLOW_FAILURES) != false
   include:
     - stage: sast
-      script: rm -Rf ./node_modules; docker run -v $(pwd):/app thefriendlypirate/nodejsscancli run --from=travis-ci
+      script: docker run -v $(pwd):/app thefriendlypirate/nodejsscancli run --from=travis-ci
       install: skip
       name: "nodejsscan"
       if: language = "node_js"
