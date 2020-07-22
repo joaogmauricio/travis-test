@@ -1,5 +1,8 @@
 language: node_js
 
+env:
+  - USE_VERACODE=true
+
 import:
   - .security-secrets-scanning-template.yml
   - .security-sca-template.yml
