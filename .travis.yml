@@ -1,7 +1,7 @@
-language: node_js
+language: python
 
-env:
-  - USE_VERACODE=true
+#env:
+#  - USE_VERACODE=true
 
 import:
   - .security-secrets-scanning-template.yml
