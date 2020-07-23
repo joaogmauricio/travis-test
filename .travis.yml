@@ -9,11 +9,11 @@ env:
 #  - USE_VERACODE=true
 
 import:
-  - .security-secrets-scanning-template.yml
-  - .security-sca-template.yml
-  - .security-sast-template.yml
-  - .security-container-scanning-template.yml
-  - .security-dast-template.yml
+  - joaogmauricio/security-integration-ci:travis-ci/.security-secrets-scanning-template.yml
+  - joaogmauricio/security-integration-ci:travis-ci/.security-sca-template.yml
+  - joaogmauricio/security-integration-ci:travis-ci/.security-sast-template.yml
+  - joaogmauricio/security-integration-ci:travis-ci/.security-container-scanning-template.yml
+  - joaogmauricio/security-integration-ci:travis-ci/.security-dast-template.yml
 
 stages:
   - secrets-scanning
