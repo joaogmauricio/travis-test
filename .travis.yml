@@ -8,8 +8,8 @@ env:
 #  - USE_KUBESEC=true
 #  - USE_VERACODE=true
 
-#import:
-  - joaogmauricio/security-integration-ci:travis-ci/.security-secrets-scanning-template.yml@master
+import:
+  - joaogmauricio/security-integration-ci:travis-ci/.security-secrets-scanning-template.yml
   - joaogmauricio/security-integration-ci:travis-ci/.security-sca-template.yml@master
   - joaogmauricio/security-integration-ci:travis-ci/.security-sast-template.yml@master
   - joaogmauricio/security-integration-ci:travis-ci/.security-container-scanning-template.yml@master
