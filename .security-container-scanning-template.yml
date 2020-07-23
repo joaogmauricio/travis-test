@@ -5,3 +5,4 @@ jobs:
   include:
     - stage: container-scanning
       script: echo "container-scanning"
+      install: skip
