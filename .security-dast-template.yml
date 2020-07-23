@@ -10,11 +10,11 @@ jobs:
       install: skip
       name: "kubesec"
       if: env(USE_KUBESEC) == true
-    - script: docker run -v $(pwd):/app thefriendlypirate/zaproxy run --from=travis-ci
+    - script: docker run -e SEC_DAST_TARGET_URL thefriendlypirate/zaproxy run --from=travis-ci
       install: skip
       name: "zaproxy"
       if: env(USE_ZAPROXY) == true AND env(SEC_DAST_TARGET_URL) IS present
-    - script: docker run -v $(pwd):/app thefriendlypirate/zaproxy run --from=travis-ci
+    - script: docker run -e SEC_DAST_TARGET_URL thefriendlypirate/ssllabs-scan run --from=travis-ci
       install: skip
       name: "ssllabsscan"
       if: (env(NO_INTERNET) IS NOT present OR env(NO_INTERNET) == false) AND env(SEC_DAST_TARGET_URL) IS present
