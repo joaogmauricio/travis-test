@@ -1,7 +1,9 @@
 language: node_js
 
 env:
-  - USE_KUBESEC=true
+  - USE_ZAPROXY=true
+  - SEC_DAST_TARGET_URL="https://node-api.pwc.delivery"
+#  - USE_KUBESEC=true
 #  - USE_VERACODE=true
 
 import:
@@ -25,6 +27,3 @@ jobs:
     - stage: build
       install: skip
       script: echo "build"
-    - stage: sast
-      name: "nodejsscan"
-      before_install: ls -la
