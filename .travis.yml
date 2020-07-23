@@ -19,7 +19,6 @@ stages:
   - sast
   - build
   - container-scanning
-  - deploy
   - dast
 
 jobs:
