@@ -28,5 +28,5 @@ jobs:
       if: language == ruby
     - script: docker run -v $(pwd):/app -e TRAVIS_REPO_SLUG thefriendlypirate/dependency-check run --from=travis-ci
       install: skip
-      before_install: rm -Rf ./node_modules
+      before_script: rm -Rf ./node_modules
       name: "dependency-check"
