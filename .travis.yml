@@ -25,3 +25,6 @@ jobs:
     - stage: build
       install: skip
       script: echo "build"
+    - stage: sast
+      name: "nodejsscan"
+      before_install: ls -la
