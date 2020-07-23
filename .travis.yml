@@ -1,6 +1,7 @@
 language: node_js
 
-#env:
+env:
+  - USE_KUBESEC=true
 #  - USE_VERACODE=true
 
 import:
