@@ -1,7 +1,7 @@
 language: node_js
 
 env:
-  - DOCKLE_IMAGE="thefriendlypirate/testssl"
+  - DOCKLE_IMAGE_URL="thefriendlypirate/testssl" SEC_DAST_TARGET_URL="https://node-api.pwc.delivery"
 #  - NO_INTERNET=true SEC_DAST_TARGET_URL="https://node-api.pwc.delivery"
 #  - USE_ZAPROXY=true SEC_DAST_TARGET_URL="https://node-api.pwc.delivery"
 #  - USE_KUBESEC=true
