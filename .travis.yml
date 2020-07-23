@@ -1,8 +1,7 @@
 language: node_js
 
 env:
-  - USE_ZAPROXY=true
-  - SEC_DAST_TARGET_URL="https://node-api.pwc.delivery"
+  - USE_ZAPROXY=true SEC_DAST_TARGET_URL="https://node-api.pwc.delivery"
 #  - USE_KUBESEC=true
 #  - USE_VERACODE=true
 
