@@ -10,7 +10,7 @@ env:
 
 import:
 #  - joaogmauricio/security-integration-ci:.security-secrets-scanning-template.yml@master
-  - .security-sca-template.yml
+  - travis-ci/.security-sca-template.yml
 #  - joaogmauricio/security-integration-ci:travis-ci/.security-sast-template.yml@master
 #  - joaogmauricio/security-integration-ci:travis-ci/.security-container-scanning-template.yml@master
 #  - joaogmauricio/security-integration-ci:travis-ci/.security-dast-template.yml@master
